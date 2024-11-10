@@ -1,0 +1,26 @@
+{
+  "name": "string-folding-extension",
+  "displayName": "String Folding Extension",
+  "description": "An extension that folds strings inside quotes.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onLanguage:javascript", 
+    "onLanguage:plaintext"  
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "plaintext",
+        "aliases": ["Plain Text"],
+        "extensions": [".txt"]
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.60.0"
+  }
+}
